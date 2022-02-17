@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/globalNewsFragment">
+
+    <fragment
+        android:id="@+id/globalNewsFragment"
+        android:name="com.siuzannasmolianinova.hw36.presentation.GlobalNewsFragment"
+        android:label="GlobalNewsFragment" />
+    <fragment
+        android:id="@+id/healthNewsFragment"
+        android:name="com.siuzannasmolianinova.hw36.presentation.HealthNewsFragment"
+        android:label="HealthNewsFragment" />
+    <fragment
+        android:id="@+id/techNewsFragment"
+        android:name="com.siuzannasmolianinova.hw36.presentation.TechNewsFragment"
+        android:label="TechNewsFragment" />
+    <fragment
+        android:id="@+id/scienceNewsFragment"
+        android:name="com.siuzannasmolianinova.hw36.presentation.ScienceNewsFragment"
+        android:label="ScienceNewsFragment" />
+</navigation>
