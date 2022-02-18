@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.news.presentation
+package com.siuzannasmolianinova.news.presentation.fragment
 
 import android.app.AlertDialog
 import android.os.Build
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -17,21 +18,24 @@ import com.siuzannasmolianinova.news.R
 import com.siuzannasmolianinova.news.data.Country
 import com.siuzannasmolianinova.news.data.db.Article
 import com.siuzannasmolianinova.news.data.db.Category
-import com.siuzannasmolianinova.news.databinding.FragmentGlobalNewsBinding
+import com.siuzannasmolianinova.news.data.db.type_converters.CategoryConverter
+import com.siuzannasmolianinova.news.data.db.type_converters.CountryConverter
+import com.siuzannasmolianinova.news.databinding.FragmentNewsBinding
+import com.siuzannasmolianinova.news.presentation.adapter.NewsAdapter
 import com.siuzannasmolianinova.news.presentation.core.ConnectionState
 import com.siuzannasmolianinova.news.presentation.core.ItemOffsetDecoration
 import com.siuzannasmolianinova.news.presentation.core.State
-import com.siuzannasmolianinova.news.presentation.view_model.GlobalNewsViewModel
+import com.siuzannasmolianinova.news.presentation.view_model.HealthNewsViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
-class GlobalNewsFragment : Fragment() {
-    private var _binding: FragmentGlobalNewsBinding? = null
-    private val binding: FragmentGlobalNewsBinding get() = _binding!!
-    private val viewModel: GlobalNewsViewModel by viewModels()
+class HealthNewsFragment : Fragment() {
+    private var _binding: FragmentNewsBinding? = null
+    private val binding: FragmentNewsBinding get() = _binding!!
+    private val viewModel: HealthNewsViewModel by viewModels()
     private lateinit var newsAdapter: NewsAdapter
     private lateinit var category: Flow<Category>
     private lateinit var country: Flow<Country>
@@ -41,7 +45,7 @@ class GlobalNewsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentGlobalNewsBinding.inflate(inflater, container, false)
+        _binding = FragmentNewsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -50,15 +54,20 @@ class GlobalNewsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initToolbar()
         initAdapter()
-        category = flowOf(Category.GLOBAL)
-        country = flowOf(Country.RUSSIA)
+        category = flowOf(Category.HEALTH)
+        country = flowOf(Country.RU)
         viewModel.checkConnection()
         bindViewModel()
     }
-
     private fun initToolbar() {
         val toolbar: MaterialToolbar = binding.appBar.toolbar
-        toolbar.title = "Global Newsfeed"
+        toolbar.title = "Health Newsfeed"
+        toolbar.setOnMenuItemClickListener { item ->
+            country = flowOf(CountryConverter().convertStringToCountry(item.title.toString()))
+            viewModel.checkConnection()
+            Timber.d("category = ${CountryConverter().convertStringToCountry(item.title.toString())}")
+            true
+        }
     }
 
     private fun initAdapter() {

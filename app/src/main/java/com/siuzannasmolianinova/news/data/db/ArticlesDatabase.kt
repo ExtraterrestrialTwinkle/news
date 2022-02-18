@@ -1,11 +1,11 @@
-package com.siuzannasmolianinova.hw36.data.db
+package com.siuzannasmolianinova.news.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.siuzannasmolianinova.hw36.data.db.ArticlesDatabase.Companion.DB_VERSION
-import com.siuzannasmolianinova.hw36.data.db.type_converters.CategoryConverter
-import com.siuzannasmolianinova.hw36.data.db.type_converters.CountryConverter
+import com.siuzannasmolianinova.news.data.db.ArticlesDatabase.Companion.DB_VERSION
+import com.siuzannasmolianinova.news.data.db.type_converters.CategoryConverter
+import com.siuzannasmolianinova.news.data.db.type_converters.CountryConverter
 
 @TypeConverters(CategoryConverter::class, CountryConverter::class)
 @Database(

@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.presentation
+package com.siuzannasmolianinova.news.presentation.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,13 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.siuzannasmolianinova.hw36.databinding.FragmentBlankBinding
-import com.siuzannasmolianinova.hw36.presentation.view_model.ScienceNewsViewModel
+import com.siuzannasmolianinova.news.databinding.FragmentBlankBinding
+import com.siuzannasmolianinova.news.presentation.adapter.NewsAdapter
+import com.siuzannasmolianinova.news.presentation.view_model.TechnologyNewsViewModel
 
-class ScienceNewsFragment : Fragment() {
+class TechNewsFragment : Fragment() {
     private var _binding: FragmentBlankBinding? = null
     private val binding: FragmentBlankBinding get() = _binding!!
-    private val viewModel: ScienceNewsViewModel by viewModels()
+    private val viewModel: TechnologyNewsViewModel by viewModels()
     private lateinit var newsAdapter: NewsAdapter
 
     override fun onCreateView(
@@ -26,6 +27,6 @@ class ScienceNewsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.text.text = "Science News"
+        binding.text.text = "Technology News"
     }
 }

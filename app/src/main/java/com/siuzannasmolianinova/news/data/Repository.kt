@@ -86,7 +86,7 @@ class Repository {
                 ) {
                     if (response.isSuccessful) {
                         Timber.d("isSuccessful")
-                        if (response.body()?.status == ResponseStatus.OK.name) {
+                        if (response.body()?.status == "ok") {
                             response.body()?.articles?.let {
                                 flowOf(it)
                             }?.let {

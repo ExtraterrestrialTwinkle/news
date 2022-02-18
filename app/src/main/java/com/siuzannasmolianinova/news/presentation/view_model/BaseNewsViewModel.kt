@@ -61,6 +61,7 @@ abstract class BaseNewsViewModel(val app: Application) : AndroidViewModel(app) {
 
     fun checkConnection(): Boolean {
         return if (repository.isOnline(app)) {
+            _connectionState.value = ConnectionState.UNKNOWN
             _connectionState.value = ConnectionState.CONNECTED
             Timber.d("connected")
             true

@@ -18,12 +18,12 @@ data class Article(
     val title: String,
     @Json(name = "description")
     @ColumnInfo(name = ArticleContract.Columns.DESCRIPTION)
-    val description: String,
+    val description: String?,
     @Json(name = "urlToImage")
     @ColumnInfo(name = ArticleContract.Columns.IMAGE_LINK)
     val imageLink: String?,
     @ColumnInfo(name = ArticleContract.Columns.COUNTRY)
-    val country: Country = Country.RUSSIA,
+    val country: Country = Country.RU,
     @ColumnInfo(name = ArticleContract.Columns.CATEGORY)
     val category: Category = Category.GLOBAL
 ) {

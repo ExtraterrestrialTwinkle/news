@@ -11,7 +11,10 @@ class CountryConverter {
     }
 
     @TypeConverter
-    fun convertStringToCountry(countryString: String) = Country.valueOf(countryString).apply {
-        Timber.d("${Country.valueOf(countryString)}")
-    }
+    fun convertStringToCountry(countryString: String) = Country.values().find {
+        it.country == countryString
+    } ?: Country.RU
+        .apply {
+            Timber.d("country = $this")
+        }
 }

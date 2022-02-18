@@ -1,8 +1,8 @@
-package com.siuzannasmolianinova.hw36.core
+package com.siuzannasmolianinova.news.core
 
 import android.view.MenuItem
-import com.siuzannasmolianinova.hw36.R
-import com.siuzannasmolianinova.hw36.data.Country
+import com.siuzannasmolianinova.news.R
+import com.siuzannasmolianinova.news.data.Country
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.trySendBlocking
 import kotlinx.coroutines.flow.Flow
@@ -13,219 +13,219 @@ fun MenuItem.itemClickFlow(): Flow<Country> {
         val itemClickListener = MenuItem.OnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.ae -> {
-                    trySendBlocking(Country.UNITED_ARAB_EMIRATES)
+                    trySendBlocking(Country.AE)
                     true
                 }
                 R.id.ar -> {
-                    trySendBlocking(Country.ARGENTINA)
+                    trySendBlocking(Country.AR)
                     true
                 }
                 R.id.at -> {
-                    trySendBlocking(Country.AUSTRIA)
+                    trySendBlocking(Country.AT)
                     true
                 }
                 R.id.au -> {
-                    trySendBlocking(Country.AUSTRALIA)
+                    trySendBlocking(Country.AU)
                     true
                 }
                 R.id.be -> {
-                    trySendBlocking(Country.BELGIUM)
+                    trySendBlocking(Country.BE)
                     true
                 }
                 R.id.bg -> {
-                    trySendBlocking(Country.BULGARIA)
+                    trySendBlocking(Country.BG)
                     true
                 }
                 R.id.br -> {
-                    trySendBlocking(Country.BRAZIL)
+                    trySendBlocking(Country.BR)
                     true
                 }
                 R.id.ca -> {
-                    trySendBlocking(Country.CANADA)
+                    trySendBlocking(Country.CA)
                     true
                 }
                 R.id.ch -> {
-                    trySendBlocking(Country.SWITZERLAND)
+                    trySendBlocking(Country.CH)
                     true
                 }
                 R.id.cn -> {
-                    trySendBlocking(Country.CHINA)
+                    trySendBlocking(Country.CN)
                     true
                 }
                 R.id.co -> {
-                    trySendBlocking(Country.COLOMBIA)
+                    trySendBlocking(Country.CO)
                     true
                 }
                 R.id.cu -> {
-                    trySendBlocking(Country.CUBA)
+                    trySendBlocking(Country.CU)
                     true
                 }
                 R.id.cz -> {
-                    trySendBlocking(Country.CZECHIA)
+                    trySendBlocking(Country.CZ)
                     true
                 }
                 R.id.de -> {
-                    trySendBlocking(Country.GERMANY)
+                    trySendBlocking(Country.DE)
                     true
                 }
                 R.id.eg -> {
-                    trySendBlocking(Country.EGYPT)
+                    trySendBlocking(Country.EG)
                     true
                 }
                 R.id.fr -> {
-                    trySendBlocking(Country.FRANCE)
+                    trySendBlocking(Country.FR)
                     true
                 }
                 R.id.gb -> {
-                    trySendBlocking(Country.UNITED_KINGDOM)
+                    trySendBlocking(Country.GB)
                     true
                 }
                 R.id.gr -> {
-                    trySendBlocking(Country.GREECE)
+                    trySendBlocking(Country.GR)
                     true
                 }
                 R.id.hk -> {
-                    trySendBlocking(Country.HONG_KONG)
+                    trySendBlocking(Country.HK)
                     true
                 }
                 R.id.hu -> {
-                    trySendBlocking(Country.HUNGARY)
+                    trySendBlocking(Country.HU)
                     true
                 }
                 R.id.id -> {
-                    trySendBlocking(Country.INDONESIA)
+                    trySendBlocking(Country.ID)
                     true
                 }
                 R.id.ie -> {
-                    trySendBlocking(Country.IRELAND)
+                    trySendBlocking(Country.IE)
                     true
                 }
                 R.id.il -> {
-                    trySendBlocking(Country.ISRAEL)
+                    trySendBlocking(Country.IL)
                     true
                 }
                 R.id.ind -> {
-                    trySendBlocking(Country.INDIA)
+                    trySendBlocking(Country.IN)
                     true
                 }
                 R.id.it -> {
-                    trySendBlocking(Country.ITALY)
+                    trySendBlocking(Country.IT)
                     true
                 }
                 R.id.jp -> {
-                    trySendBlocking(Country.JAPAN)
+                    trySendBlocking(Country.JP)
                     true
                 }
                 R.id.kr -> {
-                    trySendBlocking(Country.KOREA)
+                    trySendBlocking(Country.KR)
                     true
                 }
                 R.id.lt -> {
-                    trySendBlocking(Country.LITHUANIA)
+                    trySendBlocking(Country.LT)
                     true
                 }
                 R.id.lv -> {
-                    trySendBlocking(Country.LATVIA)
+                    trySendBlocking(Country.LV)
                     true
                 }
                 R.id.ma -> {
-                    trySendBlocking(Country.MOROCCO)
+                    trySendBlocking(Country.MA)
                     true
                 }
                 R.id.mx -> {
-                    trySendBlocking(Country.MEXICO)
+                    trySendBlocking(Country.MX)
                     true
                 }
                 R.id.my -> {
-                    trySendBlocking(Country.MALAYSIA)
+                    trySendBlocking(Country.MY)
                     true
                 }
                 R.id.ng -> {
-                    trySendBlocking(Country.NIGERIA)
+                    trySendBlocking(Country.NG)
                     true
                 }
                 R.id.nl -> {
-                    trySendBlocking(Country.NETHERLANDS)
+                    trySendBlocking(Country.NL)
                     true
                 }
                 R.id.no -> {
-                    trySendBlocking(Country.NORWAY)
+                    trySendBlocking(Country.NO)
                     true
                 }
                 R.id.nz -> {
-                    trySendBlocking(Country.NEW_ZEALAND)
+                    trySendBlocking(Country.NZ)
                     true
                 }
                 R.id.ph -> {
-                    trySendBlocking(Country.PHILIPPINES)
+                    trySendBlocking(Country.PH)
                     true
                 }
                 R.id.pl -> {
-                    trySendBlocking(Country.POLAND)
+                    trySendBlocking(Country.PL)
                     true
                 }
                 R.id.pt -> {
-                    trySendBlocking(Country.PORTUGAL)
+                    trySendBlocking(Country.PT)
                     true
                 }
                 R.id.ro -> {
-                    trySendBlocking(Country.ROMANIA)
+                    trySendBlocking(Country.RO)
                     true
                 }
                 R.id.rs -> {
-                    trySendBlocking(Country.SERBIA)
+                    trySendBlocking(Country.RS)
                     true
                 }
                 R.id.ru -> {
-                    trySendBlocking(Country.RUSSIA)
+                    trySendBlocking(Country.RU)
                     true
                 }
                 R.id.sa -> {
-                    trySendBlocking(Country.SAUDI_ARABIA)
+                    trySendBlocking(Country.SA)
                     true
                 }
                 R.id.se -> {
-                    trySendBlocking(Country.SWEDEN)
+                    trySendBlocking(Country.SE)
                     true
                 }
                 R.id.sg -> {
-                    trySendBlocking(Country.SINGAPORE)
+                    trySendBlocking(Country.SG)
                     true
                 }
                 R.id.si -> {
-                    trySendBlocking(Country.SLOVENIA)
+                    trySendBlocking(Country.SI)
                     true
                 }
                 R.id.sk -> {
-                    trySendBlocking(Country.SLOVAKIA)
+                    trySendBlocking(Country.SK)
                     true
                 }
                 R.id.th -> {
-                    trySendBlocking(Country.THAILAND)
+                    trySendBlocking(Country.TH)
                     true
                 }
                 R.id.tr -> {
-                    trySendBlocking(Country.TURKEY)
+                    trySendBlocking(Country.TR)
                     true
                 }
                 R.id.tw -> {
-                    trySendBlocking(Country.TAIWAN)
+                    trySendBlocking(Country.TW)
                     true
                 }
                 R.id.ua -> {
-                    trySendBlocking(Country.UKRAINE)
+                    trySendBlocking(Country.UA)
                     true
                 }
                 R.id.us -> {
-                    trySendBlocking(Country.USA)
+                    trySendBlocking(Country.US)
                     true
                 }
                 R.id.ve -> {
-                    trySendBlocking(Country.VENEZUELA)
+                    trySendBlocking(Country.VE)
                     true
                 }
                 R.id.za -> {
-                    trySendBlocking(Country.SOUTH_AFRICA)
+                    trySendBlocking(Country.ZA)
                     true
                 }
                 else -> error("Unexpected id")

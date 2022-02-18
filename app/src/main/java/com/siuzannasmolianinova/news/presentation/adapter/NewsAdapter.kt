@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.presentation
+package com.siuzannasmolianinova.news.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.siuzannasmolianinova.hw36.R
-import com.siuzannasmolianinova.hw36.data.db.Article
-import com.siuzannasmolianinova.hw36.databinding.ItemNewsBinding
+import com.siuzannasmolianinova.news.R
+import com.siuzannasmolianinova.news.data.db.Article
+import com.siuzannasmolianinova.news.databinding.ItemNewsBinding
 
 class NewsAdapter : ListAdapter<Article, RecyclerView.ViewHolder>(DiffCallback()) {
 
@@ -49,7 +49,7 @@ class NewsAdapter : ListAdapter<Article, RecyclerView.ViewHolder>(DiffCallback()
         }
 
         override fun areContentsTheSame(oldItem: Article, newItem: Article): Boolean {
-            return newItem == oldItem
+            return newItem.title == oldItem.title && newItem.description == oldItem.description
         }
     }
 }

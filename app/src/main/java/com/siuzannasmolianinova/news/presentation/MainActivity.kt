@@ -1,12 +1,12 @@
-package com.siuzannasmolianinova.hw36.presentation
+package com.siuzannasmolianinova.news.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.siuzannasmolianinova.hw36.R
-import com.siuzannasmolianinova.hw36.data.db.Category
-import com.siuzannasmolianinova.hw36.databinding.ActivityMainBinding
+import com.siuzannasmolianinova.news.R
+import com.siuzannasmolianinova.news.data.db.Category
+import com.siuzannasmolianinova.news.databinding.ActivityMainBinding
 import kotlinx.coroutines.flow.Flow
 
 class MainActivity : AppCompatActivity() {

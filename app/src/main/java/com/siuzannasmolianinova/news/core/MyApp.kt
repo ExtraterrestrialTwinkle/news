@@ -1,7 +1,7 @@
-package com.siuzannasmolianinova.hw36.core
+package com.siuzannasmolianinova.news.core
 
 import android.app.Application
-import com.siuzannasmolianinova.hw36.data.db.Database
+import com.siuzannasmolianinova.news.data.db.Database
 import timber.log.Timber
 
 class MyApp : Application() {

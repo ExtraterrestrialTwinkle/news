@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36
+package com.siuzannasmolianinova.news
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
