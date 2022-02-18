@@ -1,8 +1,8 @@
-package com.siuzannasmolianinova.hw36.data.networking
+package com.siuzannasmolianinova.news.data.networking
 
-import com.siuzannasmolianinova.hw36.data.Country
-import com.siuzannasmolianinova.hw36.data.Response
-import com.siuzannasmolianinova.hw36.data.db.Category
+import com.siuzannasmolianinova.news.data.Country
+import com.siuzannasmolianinova.news.data.Response
+import com.siuzannasmolianinova.news.data.db.Category
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

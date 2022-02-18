@@ -6,18 +6,18 @@
 
     <fragment
         android:id="@+id/globalNewsFragment"
-        android:name="com.siuzannasmolianinova.hw36.presentation.GlobalNewsFragment"
+        android:name="com.siuzannasmolianinova.news.presentation.GlobalNewsFragment"
         android:label="GlobalNewsFragment" />
     <fragment
         android:id="@+id/healthNewsFragment"
-        android:name="com.siuzannasmolianinova.hw36.presentation.HealthNewsFragment"
+        android:name="com.siuzannasmolianinova.news.presentation.HealthNewsFragment"
         android:label="HealthNewsFragment" />
     <fragment
         android:id="@+id/techNewsFragment"
-        android:name="com.siuzannasmolianinova.hw36.presentation.TechNewsFragment"
+        android:name="com.siuzannasmolianinova.news.presentation.TechNewsFragment"
         android:label="TechNewsFragment" />
     <fragment
         android:id="@+id/scienceNewsFragment"
-        android:name="com.siuzannasmolianinova.hw36.presentation.ScienceNewsFragment"
+        android:name="com.siuzannasmolianinova.news.presentation.ScienceNewsFragment"
         android:label="ScienceNewsFragment" />
 </navigation>

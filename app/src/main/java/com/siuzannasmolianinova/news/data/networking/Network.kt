@@ -1,6 +1,6 @@
-package com.siuzannasmolianinova.hw36.data.networking
+package com.siuzannasmolianinova.news.data.networking
 
-import com.siuzannasmolianinova.hw36.BuildConfig
+import com.siuzannasmolianinova.news.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request

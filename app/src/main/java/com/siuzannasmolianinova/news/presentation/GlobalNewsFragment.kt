@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.presentation
+package com.siuzannasmolianinova.news.presentation
 
 import android.app.AlertDialog
 import android.os.Build
@@ -7,22 +7,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.snackbar.Snackbar
-import com.siuzannasmolianinova.hw36.R
-import com.siuzannasmolianinova.hw36.data.Country
-import com.siuzannasmolianinova.hw36.data.db.Article
-import com.siuzannasmolianinova.hw36.data.db.Category
-import com.siuzannasmolianinova.hw36.databinding.FragmentGlobalNewsBinding
-import com.siuzannasmolianinova.hw36.presentation.core.ConnectionState
-import com.siuzannasmolianinova.hw36.presentation.core.ItemOffsetDecoration
-import com.siuzannasmolianinova.hw36.presentation.core.State
-import com.siuzannasmolianinova.hw36.presentation.view_model.GlobalNewsViewModel
+import com.siuzannasmolianinova.news.R
+import com.siuzannasmolianinova.news.data.Country
+import com.siuzannasmolianinova.news.data.db.Article
+import com.siuzannasmolianinova.news.data.db.Category
+import com.siuzannasmolianinova.news.databinding.FragmentGlobalNewsBinding
+import com.siuzannasmolianinova.news.presentation.core.ConnectionState
+import com.siuzannasmolianinova.news.presentation.core.ItemOffsetDecoration
+import com.siuzannasmolianinova.news.presentation.core.State
+import com.siuzannasmolianinova.news.presentation.view_model.GlobalNewsViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOf

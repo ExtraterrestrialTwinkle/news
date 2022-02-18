@@ -1,9 +1,9 @@
-package com.siuzannasmolianinova.hw36.data.db
+package com.siuzannasmolianinova.news.data.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.siuzannasmolianinova.hw36.data.Country
+import com.siuzannasmolianinova.news.data.Country
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 

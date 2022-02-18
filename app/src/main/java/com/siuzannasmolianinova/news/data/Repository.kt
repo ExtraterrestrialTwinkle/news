@@ -1,14 +1,14 @@
-package com.siuzannasmolianinova.hw36.data
+package com.siuzannasmolianinova.news.data
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.siuzannasmolianinova.hw36.data.db.Article
-import com.siuzannasmolianinova.hw36.data.db.Category
-import com.siuzannasmolianinova.hw36.data.db.Database
-import com.siuzannasmolianinova.hw36.data.networking.Network
+import com.siuzannasmolianinova.news.data.db.Article
+import com.siuzannasmolianinova.news.data.db.Category
+import com.siuzannasmolianinova.news.data.db.Database
+import com.siuzannasmolianinova.news.data.networking.Network
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect

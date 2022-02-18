@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.presentation.view_model
+package com.siuzannasmolianinova.news.presentation.view_model
 
 import android.app.Application
 

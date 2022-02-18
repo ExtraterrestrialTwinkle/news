@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.data
+package com.siuzannasmolianinova.news.data
 
 enum class Country(name: String) {
     UNITED_ARAB_EMIRATES("ae"),

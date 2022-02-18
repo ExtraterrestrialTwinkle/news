@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36
+package com.siuzannasmolianinova.news
 
 import org.junit.Test
 

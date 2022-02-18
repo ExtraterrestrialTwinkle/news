@@ -1,10 +1,10 @@
-package com.siuzannasmolianinova.hw36.data.db
+package com.siuzannasmolianinova.news.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.siuzannasmolianinova.hw36.data.Country
+import com.siuzannasmolianinova.news.data.Country
 import kotlinx.coroutines.flow.Flow
 
 @Dao

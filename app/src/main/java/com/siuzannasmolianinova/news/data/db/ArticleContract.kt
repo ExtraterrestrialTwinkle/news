@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.data.db
+package com.siuzannasmolianinova.news.data.db
 
 object ArticleContract {
 

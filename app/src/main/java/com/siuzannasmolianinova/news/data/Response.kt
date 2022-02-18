@@ -1,6 +1,6 @@
-package com.siuzannasmolianinova.hw36.data
+package com.siuzannasmolianinova.news.data
 
-import com.siuzannasmolianinova.hw36.data.db.Article
+import com.siuzannasmolianinova.news.data.db.Article
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 

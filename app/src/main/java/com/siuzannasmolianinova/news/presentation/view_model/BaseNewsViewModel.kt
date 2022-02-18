@@ -1,15 +1,15 @@
-package com.siuzannasmolianinova.hw36.presentation.view_model
+package com.siuzannasmolianinova.news.presentation.view_model
 
 import android.app.Application
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.siuzannasmolianinova.hw36.data.Country
-import com.siuzannasmolianinova.hw36.data.Repository
-import com.siuzannasmolianinova.hw36.data.db.Category
-import com.siuzannasmolianinova.hw36.presentation.core.ConnectionState
-import com.siuzannasmolianinova.hw36.presentation.core.State
+import com.siuzannasmolianinova.news.data.Country
+import com.siuzannasmolianinova.news.data.Repository
+import com.siuzannasmolianinova.news.data.db.Category
+import com.siuzannasmolianinova.news.presentation.core.ConnectionState
+import com.siuzannasmolianinova.news.presentation.core.State
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.*
 import timber.log.Timber

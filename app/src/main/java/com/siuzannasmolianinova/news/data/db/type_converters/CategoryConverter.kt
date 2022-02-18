@@ -1,7 +1,7 @@
-package com.siuzannasmolianinova.hw36.data.db.type_converters
+package com.siuzannasmolianinova.news.data.db.type_converters
 
 import androidx.room.TypeConverter
-import com.siuzannasmolianinova.hw36.data.db.Category
+import com.siuzannasmolianinova.news.data.db.Category
 import timber.log.Timber
 
 class CategoryConverter {

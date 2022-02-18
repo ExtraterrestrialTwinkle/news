@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.presentation.core
+package com.siuzannasmolianinova.news.presentation.core
 
 import android.content.Context
 import android.graphics.Rect

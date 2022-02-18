@@ -1,6 +1,6 @@
-package com.siuzannasmolianinova.hw36.presentation.core
+package com.siuzannasmolianinova.news.presentation.core
 
-import com.siuzannasmolianinova.hw36.data.db.Article
+import com.siuzannasmolianinova.news.data.db.Article
 import kotlinx.coroutines.flow.Flow
 
 sealed class State {

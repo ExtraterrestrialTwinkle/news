@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.data
+package com.siuzannasmolianinova.news.data
 
 enum class ResponseStatus(name: String) {
     OK("ok"),

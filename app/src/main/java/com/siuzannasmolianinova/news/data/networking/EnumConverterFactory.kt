@@ -1,4 +1,4 @@
-package com.siuzannasmolianinova.hw36.data.networking
+package com.siuzannasmolianinova.news.data.networking
 
 import com.squareup.moshi.Json
 import retrofit2.Converter
