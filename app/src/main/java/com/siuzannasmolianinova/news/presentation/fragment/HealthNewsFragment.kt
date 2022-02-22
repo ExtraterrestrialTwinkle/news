@@ -65,7 +65,7 @@ class HealthNewsFragment : Fragment() {
         toolbar.setOnMenuItemClickListener { item ->
             country = flowOf(CountryConverter().convertStringToCountry(item.title.toString()))
             viewModel.checkConnection()
-            Timber.d("category = ${CountryConverter().convertStringToCountry(item.title.toString())}")
+            Timber.d("country = ${CountryConverter().convertStringToCountry(item.title.toString())}")
             true
         }
     }
